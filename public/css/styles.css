@@ -1,0 +1,369 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    
+}
+body{
+    background-color: rgb(235, 235, 235);
+}
+header{
+    background-color: #eac926;
+}
+.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.logo{
+    width: 50%;
+    padding: 10px;
+}
+.cont__search{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+div.input {
+    display:flex;
+    background-color: rgb(255, 255, 255);
+    color: rgb(102, 102, 102);
+    border: solid black 1px;
+    outline: none;
+    padding: 2px;
+    font-size: 16px;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+}
+div.search{
+    display: inline-block;
+    background-color: #FFF;
+    color: #666;
+    font-size: 16px;
+    padding: 2px;
+}
+.barra__search{
+    border: none;
+    font-size: 12px;
+    width: 95%;
+    outline: none;
+}
+div.search i{
+    font-size: 16px;
+}
+p.s{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    font-size: 12;
+}
+h3.titulares{
+    font-size: 24px;
+    color: #666;
+}
+p.precio{
+    font-size: 18px;
+}
+p.descuento{
+    font-size: 16px;
+    color: #39b54a;
+    text-align: center;
+}
+h4.descripcion{
+    display: inline-block;
+    font-size: 16px;
+    color: #666;
+    opacity: 0;
+    transition: opacity .5s;
+    
+}
+.article:hover h4.descripcion{
+    opacity: 1;
+
+    
+    
+}
+.article:hover{
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+
+div.burger-menu i{
+    background-color: rgb(0, 68, 170);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    margin: 10px 0px 20px;
+    padding: 10px;
+}
+div.burger-menu{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    
+}
+a{
+    color: black
+}
+
+
+
+.fa, .fas{
+    font-weight: 900;
+}
+
+main section article i, .discount {
+    color: #39b54a;
+    font-size: 16px;
+}
+main{
+    width: 90%;
+    margin: auto;    
+}
+
+.article img{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+main section article{
+    background-color: white;
+}
+
+footer{
+    background-color: #fff;
+    color: #666;
+}
+footer section{
+    padding: 5% 15%;
+}
+footer section article{
+    margin-top: 15px;
+    text-align: center;
+}
+footer article i{
+    width: 30px;
+    height: 30px;
+    color: rgb(0, 68, 170);
+    font-size: 16px;
+    transition: font-size .2s;
+}
+article.pie:hover i{
+    color:rgb(2, 23, 54) ;
+    font-size: 30px;
+    animation: animacion 1.5s 1;
+
+}
+
+article{
+    margin-bottom: 10px;
+}
+.detalles{
+    border-top: solid #bebebe 1px;
+    padding: 15px;
+}
+nav{
+    display: none;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color:  #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: -15px;
+    transition-duration: 1s;
+}
+article.article:hover  i.fas.fa-truck{
+    transform: rotate(-90deg);
+}
+.detalles{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.precio{
+    width: 30%;
+}
+.descuento{
+    width: 70%;
+}
+form.registro , .login{
+    font-weight: bold;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    box-shadow: 2px 2px 2px rgba(20,20,20,0.5);
+    width: 70%;
+    padding: 20px;
+}
+form div{
+    padding: 10px;
+    
+}
+form div.categorias__interes , .prefil__usuario{
+    display: flex;
+    flex-direction: column;
+}
+.register , .reset , .aceptar{
+    font-size: 12px;
+    padding: 5px;
+    background-color: green;
+    color: rgb(235,235,235);
+    border-radius:5px;
+    margin-left: 30px;
+}
+button.aceptar:hover{
+    background-color: #0022AA;
+}
+@keyframes animacion {
+    20%{transform: rotate(20deg);}
+    60%{transform: rotate(-20deg);}
+    90%{transform: rotate(0);}
+}
+form input{
+    outline: none;
+    border: none;
+    border-bottom: solid 1px #000;
+}
+form input:focus{
+    background-color: #ebebeb;
+
+}
+
+
+
+
+@media (min-width: 361px){
+    div.burger-menu i{
+        display: none;
+
+    }
+    nav{
+        display: block;
+        margin-left: 15px;
+    }
+    .articulos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .top-header{
+        flex-wrap: wrap;
+        
+    }
+    .logo, .cont__search{
+        width: 40%;
+        font-size:18px ;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+    } 
+    .titulares{
+        padding-bottom: 15px;
+    }
+    .article{
+        width: 40%;
+        
+    }
+    p.precio, p.descuento, h4.descripcion{
+        font-size: 12px;
+    }
+    p.descuento{
+        text-align: right;
+    }
+    main section article i{
+        font-size: 12px;
+        padding: 5px;
+        width: 15px;
+        height: 15px;
+        
+    }
+    .register , .reset{
+        font-size: 16px;
+    }
+
+
+}
+
+
+
+@media (min-width: 769px){
+    *{
+        font-size: 12px;
+    }
+    div.burger-menu i{
+        display: none;
+    }
+    .articulos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .top-header{
+        flex-wrap: nowrap;
+        
+    }
+    .logo, .form, .s{
+        width: 33%;
+    }
+    nav{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 15px;
+        
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+    li{
+        margin-left: 30px;
+    } 
+    .article{
+        width: 20%;
+    }
+    .register , .reset{
+        font-size: 20px;
+    }
+    footer section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    footer section article{
+        width: 30%;
+    }
+
+
+
+
+
+
+
+}
